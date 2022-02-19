@@ -4,13 +4,12 @@
  * print_diagonal - draws a diagonal
  * @n: number of times
  *
- * Return: no value
+ * Return: void
  */
 
 void print_diagonal(int n)
 {
-	int x;
-	int y;
+	int x, y;
 
 	if (n <= 0)
 
