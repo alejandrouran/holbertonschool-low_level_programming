@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_most_number - prints the numbers
+ * print_most_numbers - prints the numbers
+ * do not print 2 and 4
  *
- * Return: 0
+ * Return: no value
  */
-
 void print_most_numbers(void)
 {
 	int w;
