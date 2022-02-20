@@ -8,9 +8,10 @@
 int main(void)
 {
 	char pha;
+
 	for (pha = 'a'; pha <= 'z'; pha++)
 
-        {
+	{
 		putchar (pha);
 	}
 
@@ -19,7 +20,7 @@ int main(void)
 		putchar(pha);
 	}
 
-        putchar('\n');
+	putchar('\n');
 
 	return (0);
 }

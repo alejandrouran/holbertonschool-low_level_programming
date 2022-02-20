@@ -8,11 +8,12 @@
 int main(void)
 
 {
-	char pha;
-	for (pha = 'z'; pha >= 'a'; pha--)
-	{
-		putchar(pha);
-	}
+	char p;
+
+	for (p = 'z'; p >= 'a'; p--)
+		putchar(p);
+
 	putchar('\n');
+
 	return (0);
 }

@@ -1,17 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - single digit numbers of base.
+ * main - single digit numbers of base 10.
  *
- * Return Always 0.
+ * Return: Always 0.
  */
 
 int main(void)
 {
-	char nu;
-	for (nu = '0'; nu <= '9'; nu++)
-	        putchar (nu);
+	char num;
 
+	for (num = '0'; num <= '9'; num++)
+	{
+		putchar (num);
+	}
 	putchar ('\n');
 	return (0);
 }

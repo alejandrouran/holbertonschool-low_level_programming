@@ -9,22 +9,22 @@
  */
 int main(void)
 {
-	int nu;
+	int n;
 
-        srand(time(0));
-	nu = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-	if (nu > 0)
+	if (n > 0)
 	{
-		printf("%d is positive\n", nu);
+		printf("%d is positive\n", n);
 	}
-	else if (nu == 0)
+	else if (n == 0)
 	{
-		printf("%d is zero\n", nu);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("%d is negative\n", nu);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);

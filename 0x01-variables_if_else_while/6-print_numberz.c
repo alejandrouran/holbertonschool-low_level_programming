@@ -10,9 +10,10 @@ int main(void)
 	int nu;
 
 	for (nu = '0'; nu <= '9'; nu++)
+	{
 		putchar (nu);
-
-        putchar (nu);
+	}
+	putchar ('\n');
 
 	return (0);
 }

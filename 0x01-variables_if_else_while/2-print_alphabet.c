@@ -9,6 +9,7 @@ int main(void)
 
 {
 	char pha;
+
 	for (pha = 'a'; pha <= 'z'; pha++)
 		putchar (pha);
 
