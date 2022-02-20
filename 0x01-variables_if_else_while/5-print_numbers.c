@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+/**
+ * main - single digit numbers of base.
+ *
+ * Return Always 0.
+ */
+
+int main(void)
+{
+	char nu;
+	for (nu = '0'; nu <= '9'; nu++)
+	        putchar (nu);
+
+	putchar ('\n');
+	return (0);
+}
