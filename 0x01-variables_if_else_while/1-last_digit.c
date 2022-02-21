@@ -24,11 +24,11 @@ int main(void)
 
 	else if (k == 0)
 
-		printf("last digit of %d is %d and is 0\n");
+		printf("last digit of %d is %d and is 0\n", n, k);
 
-	else  (k < 6 && k != 0)
+	else  (k < 6 && k != 0);
 
-		printf("last digit of %d is %d and is less than 6 and not 0\n");
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, k);
 
 
 	return (0);
