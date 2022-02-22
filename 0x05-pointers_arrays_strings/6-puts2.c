@@ -4,7 +4,7 @@
  * puts2 - prints every other character of a string
  * @str: character
  *
- * Return: 0
+ * Return: void
  */
 void puts2(char *str)
 {
@@ -13,10 +13,10 @@ void puts2(char *str)
 	while (*(str + p) != '\0')
 	{
 		if (p % 2 == 0)
-		{
+
 			_putchar(*(str + p));
-			p++;
-		}
+		p++;
+
 	}
 	_putchar('\n');
 }
