@@ -2,23 +2,21 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string.
- * @b: string convert
+ * @j: string convert
  *
  * Return: string
  */
-char *string_toupper(char *b)
+char *string_toupper(char *j)
 {
 	int i = 0;
 
-	while (b[i] != '\0')
+	while (*(j + i) != '\0')
 	{
-		if (b[i] >= 'a' && b[i] <= 'Z')
-		{
+		if (*(j + i) >= 'a' && *(j + i) <= 'Z')
 
-			b[i] = b[i] - 32;
-		}
+			*(j + i) -= 32;
 
 		i++;
 	}
-	return (b);
+	return (j);
 }
