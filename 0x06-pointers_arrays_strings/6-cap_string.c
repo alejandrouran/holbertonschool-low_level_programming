@@ -9,21 +9,30 @@
 char *cap_string(char *p)
 {
 	int i;
+	int j;
+	char a[] = "\t\n,;.!?\"(){}";
 
 	i = 0;
 
-	while (p[i] != '\0')
+	while (*(p + i) != '\0')
 	{
-		if ((i == 0 || p[i - 1] == ' ') &&
-		    (p[i] <= 'z' && p[i] >= 'a'))
+
+		if (*(p + i) >= 'a' && *(p + i) <= 'z')
 		{
-			p[i] -= 32;
+			if (i == 0)
+
+				*(p + 1) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(p + i - 1))
+
+						*(p + i) -= 'a' - 'A';
+				}
+			}
+
 		}
-		else if (!(i == 0 || p[i - 1] == ' ') &&
-			 (p[i] >= 'A' && p[i] <= 'Z'))
-	{
-		p[i] += 32;
-	}
 		i++;
 	}
 	return (p);
