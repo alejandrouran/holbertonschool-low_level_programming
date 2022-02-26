@@ -8,9 +8,10 @@
  */
 char *cap_string(char *c)
 {
+
+	char *a = "\t\n,;.!?\"(){}";
 	int i;
 	int j;
-	char *a = "\t\n,;.!?\"(){}";
 
 	for (i = 0, j = 0; c[i]; ++i)
 	{
@@ -21,7 +22,6 @@ char *cap_string(char *c)
 				for (j = 0; a[j] && a[j] != c[i - 1]; ++j)
 					;
 			}
-
 			if (a[j])
 				c[i] -= ('a' - 'A');
 		}
