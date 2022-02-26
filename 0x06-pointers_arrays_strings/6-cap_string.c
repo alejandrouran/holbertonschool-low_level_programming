@@ -14,7 +14,7 @@ char *cap_string(char *p)
 
 	i = 0;
 
-	while (*(p + i) != '\0')
+	while (*(p + i))
 	{
 
 		if (*(p + i) >= 'a' && *(p + i) <= 'z')
