@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (i = 0; i < (j + l); i++)
 		{
 			if (i >= j)
-				c[i] = s2[i + j];
+				c[i] = s2[i - j];
 			else
 				c[i] = s1[i];
 		}
