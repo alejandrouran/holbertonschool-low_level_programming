@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 
 void printfunc(void) __attribute__((constructor));
 
