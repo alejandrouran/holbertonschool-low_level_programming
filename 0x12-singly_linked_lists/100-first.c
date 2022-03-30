@@ -3,7 +3,7 @@
 void printfunc(void) __attribute__((constructor));
 
 /**
- * printfunc - unction that prints string before the main function is executed
+ * printfunc - function that prints string before the main function is executed
  */
 void printfunc(void)
 {
