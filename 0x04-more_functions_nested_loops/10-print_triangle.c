@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_trangle - prints a triangle
+ * print_triangle - prints a triangle
  * @size: is the size of the triangle
  *
  * Return: no value
@@ -23,5 +23,5 @@ void print_triangle(int size)
 		}
 	}
 	else
-		_putchat('\n');
+		_putchar('\n');
 }
